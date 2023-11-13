@@ -1,5 +1,6 @@
 -std=c++11
--L/opt/homebrew/Cellar/openssl@3/3.1.4/lib 
--I/opt/homebrew/Cellar/openssl@3/3.1.4/include 
+-L/opt/homebrew/lib 
+-I/opt/homebrew/include 
 -lssl 
 -lcrypto
+-lz
