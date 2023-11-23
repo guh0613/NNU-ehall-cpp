@@ -3,7 +3,7 @@
 # 安装依赖
 为进行https通信，你需要安装openssl以及zlib库，然后在构建时链接ssl、crypto、z库。
 
-对于Macos用户，你可以使用homebrew安装。
+对于MacOS用户，你可以使用homebrew安装。
 
 对于Windows用户，可前往[这里](https://slproweb.com/products/Win32OpenSSL.html)下载预构建的openssl库，zlib库需自行下载[源码](https://github.com/madler/zlib/releases/tag/v1.3)构建。
 
