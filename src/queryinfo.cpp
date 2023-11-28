@@ -1,10 +1,8 @@
-#include <cstdio>
 #define CPPHTTPLIB_OPENSSL_SUPPORT
 #define CPPHTTPLIB_ZLIB_SUPPORT
 
 #include "httplib.h"
 #include "json.hpp"
-#include <iostream>
 #include <string>
 
 using json = nlohmann::json;
