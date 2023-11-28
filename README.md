@@ -11,3 +11,9 @@
 若要手动构建，确保你已经安装并正确链接上述库，然后参照`compile_flags.txt`中的内容构建。
 
 推荐使用`CMake`直接构建，请确保你的计算机中已经安装上述依赖。
+```bash
+mkdir build
+cd build
+cmake ..
+make -j8
+```
