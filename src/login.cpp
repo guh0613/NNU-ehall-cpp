@@ -81,7 +81,7 @@ Headers headers_third_login = {
     {"Accept-Language", "zh-CN,zh;q=0.9"},
     {"Cache-Control", "max-age=0"},
     {"Host", "authserver.nnu.edu.cn"},
-    {"Content-Length", "5636"},
+    {"Content-Length", "5780"},
     {"Content-Type", "application/x-www-form-urlencoded"},
     {"Origin", "https://authserver.nnu.edu.cn"},
     {"Referer", "https://authserver.nnu.edu.cn/authserver/login?type=qrcode&service=https%3A%2F%2Fehall.nnu.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.nnu.edu.cn%2Fywtb-portal%2Fstandard%2Findex.html%23%2FWorkBench%2Fworkbench"},
