@@ -13,7 +13,7 @@ int enterhall(string ticket);
 int main() {
   int choice = 0;
   string ticket;
-  printf("欢迎登录南师大一站式事务系统\n");
+  wprintf(reinterpret_cast<const wchar_t *const>("欢迎登录南师大一站式事务系统\n"));
   printf("请选择：（输入数字序号）\n");
   printf("1.登录南师一站式系统\n");
   printf("2.退出\n");
