@@ -191,7 +191,7 @@ string qrcodeTicketForFirstLogin(string name){
             
             if (value.first == "Location") {
                 newurl = value.second;
-                cout << newurl << endl;
+                //cout << newurl << endl;
             }
             if (value.first == "Set-Cookie") {
                 string cookie = value.second;
@@ -295,7 +295,7 @@ Headers headers_weu = {
   auto res = cli.Get("/appShow?appId=4768687067472349", headers_appshow, 
   [&](const Response &response) {
     for(auto value  : response.headers){
-        cout << value.first << ":" << value.second << endl;
+        //cout << value.first << ":" << value.second << endl;
       if(response.status == 302 && value.first == "Location"){
         string location = value.second;
         //Location: http://ehallapp.nnu.edu.cn/jwapp/sys/studentWdksapApp/*default/index.do?t_s=1700738745482&amp_sec_version_=1&gid_=WGhYYWREa2ZBczZBZnNrdTF2aEhma2lWbnlnd1IxT21ubUpoaWtZeHdKVmZlQUVKalQrSzBmUm5NQ1FPUkR1ditON1E5SFc4dTV1cEF6aW1UamRCSFE9PQ&EMAP_LANG=zh&THEME=teal
@@ -303,7 +303,7 @@ Headers headers_weu = {
         smatch result;
         regex_search(location, result, pattern);
         path = result[0];
-        cout << "path:" << path << endl;
+        //cout << "path:" << path << endl;
       }
     }
     return true; 
