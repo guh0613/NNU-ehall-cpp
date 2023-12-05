@@ -1,19 +1,28 @@
 #define CPPHTTPLIB_OPENSSL_SUPPORT
 #define CPPHTTPLIB_ZLIB_SUPPORT
+#define WIN32_LEAN_AND_MEAN
 
 #include "login.hpp"
 #include "queryinfo.hpp"
 #include <cstdio>
-#include <stdio.h>
+
+#ifdef _WIN32
+#include <Windows.h>
+#endif
 
 using namespace std;
 
 int enterhall(string ticket);
 
 int main() {
+
+#ifdef _WIN32
+  SetConsoleOutputCP(CP_UTF8);
+#endif
+
   int choice = 0;
   string ticket;
-  wprintf(reinterpret_cast<const wchar_t *const>("欢迎登录南师大一站式事务系统\n"));
+  printf("欢迎登录南师大一站式事务系统\n");
   printf("请选择：（输入数字序号）\n");
   printf("1.登录南师一站式系统\n");
   printf("2.退出\n");
